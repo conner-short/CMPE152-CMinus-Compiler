@@ -1,0 +1,12 @@
+To build this project, run "make" in this directory (the project root). 
+It is assumed that GNU Make is installed, along with Flex and Bison. An 
+executable named "lab4" will be generated.
+
+The program accepts C-Minus code from the standard input and prints the 
+generated GAS-syntax x86 assembly code to the standard output. The code 
+can be run, but must be called by another program, such as a C program. 
+Functions in the C-Minus program can be declared and called from the C 
+code as external functions (e.g.: "int g(int a[], int b)" in C-Minus 
+code would have a prototype "extern int g(int a[], int b)" in calling C 
+code). Functions use the standard Linux calling convention, so return 
+values can be accessed by the C caller.
